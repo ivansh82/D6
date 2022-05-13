@@ -3,9 +3,6 @@ from django.contrib.auth.models import User, AbstractUser
 from datetime import datetime, date
 
 
-# Create your models here.
-
-
 
 
 class Author(models.Model):
@@ -104,27 +101,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'{self.comment_post}, {self.comment_user}, {self.com_rating}'
-
-
-
-#Category.objects.all().values('subscribers')
-#Post.objects.get(pk=id).categories.all().values('tag')
-#Category.objects.all()[2].subscribers.all().values('username')
-#Category.objects.filter(tag='Спорт').values('subscribers__username').values()
-#print(user in Category.objects.filter(tag='Спорт').values('subscribers__username')[0].values())
-#Category.objects.get(tag= 'Спорт').subscribers.add(User.objects.get(username='author'))
-#Category.objects.all()[0].id
-#a = Post.objects.get(pk=4).categories.all().values('tag', 'id')
-#a[0]['tag']
-#Category.objects.filter(subscribers= User.objects.get(username='admin'))
-#Category.objects.filter(subscribers= User.objects.get(username='admin')).values_list()
-#Category.objects.filter(subscribers= User.objects.get(username=str(user))).filter(tag = 'Спорт').id
-#Category.objects.all().get(pk=1)
-#Category.objects.get(pk=1).subscribers.remove(User.objects.get(username='admin'))
-#Author.objects.get(author= User.objects.get(username='admin'))
-#Author.objects.all()
-#Post.objects.get(pk=4).categories.all()
-#Category.objects.get(tag=tag).subscribers.all()
-#PostCategory.objects.all()
-#Post.objects.filter(categories__tag= 'Спорт')
-#Post.objects.filter(create_time__gt= datetime.fromtimestamp(datetime.timestamp(datetime.now()) - 604800), categories=tag).values('id')
