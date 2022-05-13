@@ -26,7 +26,7 @@ def notify_managers_appointment(sender, instance, **kwargs):
     msg = EmailMultiAlternatives(
         subject=f'{instance.headline}',
         body=f'{instance.text}',
-        from_email='zagaalexey@yandex.ru',
+        from_email='aivan.shinkarev1982@yandex.ru',
         to= list_of_users
     )
     msg.attach_alternative(html_content, "text/html")
