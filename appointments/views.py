@@ -24,8 +24,8 @@ class AppointmentView(View):
             subject=f'{appointment.headline}',
             # имя клиента и дата записи будут в теме для удобства
             message=appointment.text,  # сообщение с кратким описанием проблемы
-            from_email='peterbadson@yandex.ru',  # здесь указываете почту, с которой будете отправлять (об этом попозже)
-            recipient_list=['alex8.8@mail.ru']  # здесь список получателей. Например, секретарь, сам врач и т. д.
+            from_email='aivan.shinkarev1982@yandex.ru',  # здесь указываете почту, с которой будете отправлять (об этом попозже)
+            recipient_list=['ishinkarev@mail.ru']  # здесь список получателей. Например, секретарь, сам врач и т. д.
         )
 
         return redirect('')
